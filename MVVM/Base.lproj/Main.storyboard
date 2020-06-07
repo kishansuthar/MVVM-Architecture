@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JfU-4y-vGD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gib-IB-Tr3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoviewListCell" rowHeight="200" id="OEA-4g-CWV" customClass="MoviewListCell" customModule="MVVM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OEA-4g-CWV" id="FWw-Fc-Sx8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kMS-ab-Nd3">
+                                                    <rect key="frame" x="10" y="10" width="145" height="180"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.40000000000000002"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="7"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laxmi bomb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-VK-zgU">
+                                                    <rect key="frame" x="165" y="10" width="239" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laxmi bomb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELw-kR-n3E">
+                                                    <rect key="frame" x="165" y="39" width="229" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-at-aDw">
+                                                    <rect key="frame" x="165" y="73" width="229" height="117"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tpg-at-aDw" firstAttribute="bottom" secondItem="kMS-ab-Nd3" secondAttribute="bottom" id="2eg-PB-CsV"/>
+                                                <constraint firstItem="Tpg-at-aDw" firstAttribute="leading" secondItem="kMS-ab-Nd3" secondAttribute="trailing" constant="10" id="ICe-b7-2An"/>
+                                                <constraint firstItem="kMS-ab-Nd3" firstAttribute="width" secondItem="FWw-Fc-Sx8" secondAttribute="width" multiplier="0.35" id="Kcz-Oo-BZc"/>
+                                                <constraint firstAttribute="trailing" secondItem="ELw-kR-n3E" secondAttribute="trailing" constant="20" id="OkA-e0-dgR"/>
+                                                <constraint firstItem="ELw-kR-n3E" firstAttribute="leading" secondItem="kMS-ab-Nd3" secondAttribute="trailing" constant="10" id="Wib-xr-HXf"/>
+                                                <constraint firstAttribute="trailing" secondItem="dEG-VK-zgU" secondAttribute="trailing" constant="10" id="bVr-F9-G6J"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tpg-at-aDw" secondAttribute="trailing" constant="20" id="cVu-Zr-DVu"/>
+                                                <constraint firstItem="dEG-VK-zgU" firstAttribute="leading" secondItem="kMS-ab-Nd3" secondAttribute="trailing" constant="10" id="eIQ-Gh-OpB"/>
+                                                <constraint firstItem="dEG-VK-zgU" firstAttribute="top" secondItem="kMS-ab-Nd3" secondAttribute="top" id="iT2-kj-z5Y"/>
+                                                <constraint firstItem="kMS-ab-Nd3" firstAttribute="leading" secondItem="FWw-Fc-Sx8" secondAttribute="leading" constant="10" id="ikK-J5-E4i"/>
+                                                <constraint firstItem="kMS-ab-Nd3" firstAttribute="top" secondItem="FWw-Fc-Sx8" secondAttribute="top" constant="10" id="iy1-pO-4N6"/>
+                                                <constraint firstItem="Tpg-at-aDw" firstAttribute="top" secondItem="ELw-kR-n3E" secondAttribute="bottom" constant="10" id="kLg-lA-C89"/>
+                                                <constraint firstItem="ELw-kR-n3E" firstAttribute="top" secondItem="dEG-VK-zgU" secondAttribute="bottom" constant="5" id="y9b-HA-UAi"/>
+                                                <constraint firstAttribute="bottom" secondItem="kMS-ab-Nd3" secondAttribute="bottom" constant="10" id="zbD-Cq-gtP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgPoster" destination="kMS-ab-Nd3" id="mqA-9J-7ru"/>
+                                            <outlet property="lblMovieDate" destination="ELw-kR-n3E" id="lQh-yv-N9G"/>
+                                            <outlet property="lblMovieDetail" destination="Tpg-at-aDw" id="sAV-eV-9gd"/>
+                                            <outlet property="lblMovieName" destination="dEG-VK-zgU" id="1wP-3p-v94"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gdr-ad-zJ5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="i8g-jd-8Wu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gib-IB-Tr3" secondAttribute="trailing" id="Auh-af-uBc"/>
+                            <constraint firstItem="gib-IB-Tr3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Naf-GM-Qy8"/>
+                            <constraint firstItem="gib-IB-Tr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ba1-b7-RjM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gib-IB-Tr3" secondAttribute="bottom" id="hSR-Is-X3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="co4-cU-nzz"/>
+                    <connections>
+                        <outlet property="tblMovieList" destination="gib-IB-Tr3" id="2fI-Lg-pb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AHu-z9-VH3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JfU-4y-vGD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eAT-Zb-jfk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j17-ye-coR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llu-pE-ah7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+</document>
